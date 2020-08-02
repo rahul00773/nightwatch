@@ -1,5 +1,6 @@
 module.exports={
     "src_folders" : ["tests"],
+    'page_objects_path': ['page-object'],
 
   "webdriver" : {
     "start_process": true,
@@ -8,9 +9,20 @@ module.exports={
   },
 
   "test_settings" : {
+      
     "default" : {
+        'screenshots':{
+            'enabled':true,
+            'on_failure':true,
+            'on_error':true,
+            'path':'tests_output/screenshots'
+        },
       "desiredCapabilities": {
-        "browserName": "chrome"
+        "browserName": "chrome",
+        'chromeOptions': {
+            'args':['--headless']
+        }
+
       }
     }
   }
