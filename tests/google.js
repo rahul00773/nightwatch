@@ -1,7 +1,6 @@
 module.exports={
 
     '@tags' : ['google'],
-    
     'Google advance search: elon musk'(browser){
 
         const mainQuery = 'Elon Musk';

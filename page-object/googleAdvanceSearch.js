@@ -17,7 +17,6 @@ module.exports={
         },
 
         selectFilter(selector,value){
-           
             return this
             .click(selector)
             .click(`.goog-menuitem[value:"${value}"]`);
